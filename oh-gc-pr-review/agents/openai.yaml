@@ -1,0 +1,4 @@
+interface:
+  display_name: "OH-GC PR Review"
+  short_description: "Review PRs with oh-gc and leave inline comments"
+  default_prompt: "Use $oh-gc-pr-review to review PR #123 with the oh-gc CLI and leave inline comments for the findings."
