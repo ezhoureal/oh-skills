@@ -45,6 +45,34 @@ git show pr-<number>:path/to/file | nl -ba | sed -n '120,180p'
    Keep comments short, concrete, and actionable.
    Prefer asking a focused question when intent is unclear.
 
+Use this review summary template when reporting the review result:
+
+```markdown
+## Review
+
+**Summary:** [Good / Needs changes]
+
+**Issues:**
+- [High] file:line — problem → fix
+- [Medium] file:line — problem → fix
+
+**Suggestions:**
+-
+
+**Questions:**
+-
+
+**Verdict:** [Approve / Request changes]
+```
+
+When reviewing PRs:
+- Be specific: always include file + line if possible.
+- Separate blocking issues from suggestions.
+- Keep each comment <= 3 lines.
+- Prefer actionable fixes over vague criticism.
+- Do not repeat obvious code; focus on insight.
+- Default to concise bullet points.
+
 ## Commenting
 
 Use `oh-gc pr comment` for inline feedback:

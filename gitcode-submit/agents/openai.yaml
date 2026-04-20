@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitCode Submit"
+  short_description: "Publish GitCode changes with oh-gc"
+  default_prompt: "Use gitcode-submit to create an issue, open a draft PR, and bind the issue for this branch."
