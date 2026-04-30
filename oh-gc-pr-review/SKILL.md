@@ -45,24 +45,18 @@ git show pr-<number>:path/to/file | nl -ba | sed -n '120,180p'
    Keep comments short, concrete, and actionable.
    Prefer asking a focused question when intent is unclear.
 
-Use this review summary template when reporting the review result:
+Use this review summary template when posting the review comment on the PR:
 
 ```markdown
 ## Review
 
-**Summary:** [Good / Needs changes]
+**Triage (High/Medium/Low):**
+**Issue:**
 
-**Issues:**
-- [High] file:line — problem → fix
-- [Medium] file:line — problem → fix
-
-**Suggestions:**
+**Suggested change:**
 -
 
 **Questions:**
--
-
-**Verdict:** [Approve / Request changes]
 ```
 
 When reviewing PRs:
