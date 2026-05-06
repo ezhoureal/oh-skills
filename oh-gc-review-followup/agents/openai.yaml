@@ -1,0 +1,4 @@
+interface:
+  display_name: "oh-gc Review Follow-up"
+  short_description: "Address GitCode PR review comments"
+  default_prompt: "Use $oh-gc-review-followup to inspect and reply to GitCode PR review comments after local fixes."
