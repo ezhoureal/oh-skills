@@ -11,12 +11,9 @@ Use this skill to publish a local branch to GitCode with `oh-gc`: confirm the
 local scope, make sure the branch is pushed, create an issue, create a draft PR,
 and explicitly link the issue to the PR.
 
-`gc-oh` and `oh-gc` may refer to the same intended tool. Prefer `oh-gc` when it
-is the installed binary. If neither is available, stop and tell the user.
-
 ## Preconditions
 
-1. Run `command -v oh-gc || command -v gc-oh`.
+1. Run `command -v oh-gc`.
 2. Run `oh-gc auth status` and stop if the CLI is not authenticated.
 3. Run `git status -sb --untracked-files=all` and inspect the diff.
 4. Never stage unrelated changes silently.
@@ -76,9 +73,9 @@ oh-gc issue create --json --repo OWNER/REPO \
 
 Capture the returned issue number and URL.
 
-## Create The Draft PR
+## Create The PR
 
-Create a draft PR by default unless the user explicitly asks for ready review.
+Create a PR (don't create a draft).
 Use a real Markdown body with:
 
 - what changed;
@@ -98,8 +95,7 @@ oh-gc pr create --json --repo OWNER/REPO \
   --draft
 ```
 
-Capture the returned PR number and URL. GitCode may prefix draft titles with
-`[WIP]`; treat that as expected.
+Capture the returned PR number and URL.
 
 ## Bind The Issue
 
