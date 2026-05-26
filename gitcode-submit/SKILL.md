@@ -21,6 +21,7 @@ and explicitly link the issue to the PR.
 
 If the intended changes are already committed and the branch is clean, continue
 from the existing commit instead of creating a new one.
+Make sure to commit with `-s` as the OpenHarmony DCO requires a "Signed-off-by" line in the commit message.
 
 ## Branch And Remote
 
