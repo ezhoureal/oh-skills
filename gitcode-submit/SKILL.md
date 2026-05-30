@@ -93,7 +93,6 @@ oh-gc pr create --json --repo OWNER/REPO \
   --body "$(cat /tmp/pr-body.md)" \
   --base master \
   --head fork-owner:branch-name \
-  --draft
 ```
 
 Capture the returned PR number and URL.
